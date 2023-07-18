@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+
+        <h1>Exercice 0</h1>/*Titre du document*/
+
+        <script type="text/javascript">
+
+        /* Section 1 */   
+
+        var name = "Joe";//Je déclare la variable name qui prend comme valeur la chaine de caractère London
+        var city = 'London';//Je déclare la variable city qui prend comme valeur la chaine de caractère London
+        var age = 32;//Je déclare la variable age qui prend comme valeur un entier 32
+        var isRed = true;//Je déclare la variable isred qui prend comme valeur booléen true (vrai)
+        var isOld = age > 80;//Je déclare la variable âge qui prend comme valeur un entier 80
+
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];// variable avec plusieurs argument en chaîne de caractère ceci sont les emploi précédent d Joe
+
+        function info(height, weight) {
+            if (height > 180) {
+                console.log('Vous êtes grand');
+            }
+            if (weight < 0) {
+                console.log('oups, there is a problem');
+            } else if ( weight < 15) {
+                console.log('Are you that slim ?')
+            } else {
+                console.log('Good !')
+            }
+        }
+
+        info(165, 45);  // j'appelle la fonction infos qui elle me renvoie celon ce que je rentre dans les paranthèses
+                        //une phrase me donnant des indications sur des détails physique
+
+        var myHeight = 175;//variable indiquant la taille de la personne, la valeur est un entier 1 metre 75
+        var myWeight = 86;//variable indiquant le poid de la personne, la valeur est un entier 86
+
+        info(myHeight, myWeight);//je met dan sla fonction comme argument les varibles du dessus
+
+        info(myHeight + 15, myWeight - 100);// je rajoute 15 cm à la taille déjà près remplis et j'enléve 100 au poids déjà remplis
+
+        function toUpper(variable) {//je pense que cette fonction sert à mettre le nom en majuscule
+            return variable.toUpperCase();
+        }
+
+        var upperName = toUpper(name);
+
+        for (i = 0; i < 3; i = i + 1) {//cette boucle va permettre d'afficher les 3 élément qui sont dans la variable previousJobs
+            console.log(previousJobs[i]);
+        }
+        console.log(city);//J'affiche la variable qui contient le nom de la ville où vie Joe
+
+        if(isRed==true){
+
+            console.log("Joe est roux");
+        }else{
+            console.log("Joe n'est pas rouquin mais albinos");
+
+        }
+
+        /* Section 2: */
+
+        // afficher la ville dans laquele Joe vit.     
+
+        // afficher si Joe est roux ou pas.
+
+        /* Section 3 */
+
+        // console.log(myVariable);
+
+        </script>
+
+    </body>
+</html>
