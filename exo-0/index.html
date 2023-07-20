@@ -14,7 +14,7 @@
         var name = "Joe";//Je déclare la variable name qui prend comme valeur la chaine de caractère London
         var city = 'London';//Je déclare la variable city qui prend comme valeur la chaine de caractère London
         var age = 32;//Je déclare la variable age qui prend comme valeur un entier 32
-        var isRed = true;//Je déclare la variable isred qui prend comme valeur booléen true (vrai)
+        var isRed = false;//Je déclare la variable isred qui prend comme valeur booléen true (vrai)
         var isOld = age > 80;//Je déclare la variable âge qui prend comme valeur un entier 80
 
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];// variable avec plusieurs argument en chaîne de caractère ceci sont les emploi précédent d Joe
@@ -51,15 +51,23 @@
         for (i = 0; i < 3; i = i + 1) {//cette boucle va permettre d'afficher les 3 élément qui sont dans la variable previousJobs
             console.log(previousJobs[i]);
         }
+
         console.log(city);//J'affiche la variable qui contient le nom de la ville où vie Joe
 
-        if(isRed==true){
+        function savoir_la_couleur_cheveux(isRed){
+            
+            if(isRed==true){
 
-            console.log("Joe est roux");
-        }else{
-            console.log("Joe n'est pas rouquin mais albinos");
+                isRed = "Joe est roux";
+                // return isRed;
+            }else{
+                isRed ="Joe n'est pas rouquin mais albinos";
+                
 
+            }
+            return isRed;
         }
+        console.log(savoir_la_couleur_cheveux(isRed));
 
         /* Section 2: */
 
